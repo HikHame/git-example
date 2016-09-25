@@ -1,0 +1,873 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 20000px;
+    background: linear-gradient(45deg, #5d6e81, #28323c);
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    padding: 20px 0;
+}
+
+/*Nav with search---------------------------------------------------------------------*/
+
+.nav {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+
+nav ul{
+ width: 100%;
+}
+
+.nav ul li{
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #6a7079;
+    text-align: center;
+    width: 13%;
+    margin: 0 0 0 -3px;
+    border-right: 2px solid white;
+}
+
+.nav ul li:hover {
+    background-color: #d36742;
+}
+
+.nav ul li:active{
+    box-shadow: inset 0 0 6px;
+
+}
+.nav ul li:first-child{
+    margin: 0;
+}
+
+.nav ul li:last-child{
+    border-right:0;
+    width: 34%;
+    text-align: left;
+    padding: 5px 0;
+    text-indent: 7px;
+}
+
+.nav ul li:last-child:hover{
+    background-color: #6a7079;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    }
+
+.nav button{
+    background-color: #6a7079;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.nav button:hover{
+    color: #d36742;
+    cursor: pointer;
+}
+
+.nav ul li input{
+    color: #ffffff;
+    text-align: center;
+    height: 47px;
+    width: 85%;
+    background-color: #6a7079;
+    border: none;
+    outline: none;
+}
+
+.nav ul li input a i{
+    font-size: 100px;
+}
+
+/*End nav with search---------------------------------------------------------------------------*/
+
+/*Arrows button-------------------------------------------------------------------------------*/
+
+div.arrows {
+    float: left;
+    width: 30%;
+}
+
+div.arrows a{
+    display: block;
+    text-decoration: none;
+    color:#ffffff;
+    padding: 11px;
+}
+
+.arrow-first,.arrow-second,.arrow-third{
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    text-indent: 20px;
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+}
+
+.arrow-first{
+    margin: 0;
+}
+
+.arrow-first {
+    width: 33%;
+    background: #a9adb5;
+    position: relative;
+    color: #fff;
+}
+.arrow-first::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: -36px; bottom: 0; /* Положение треугольника */
+    border: 21px solid transparent; /* Прозрачные границы */
+    border-left: 15px solid #a9adb5; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.arrow-first:hover::after{
+    border-left: 15px solid #d36742; /* Добавляем треугольник */
+ }
+
+.arrow-first:hover{
+    background-color: #d36742;
+}
+.arrow-first:active::after{
+    border-left: 15px solid #22ac83;
+}
+.arrow-first:active{
+    background-color: #22ac83;
+}
+.arrow-second {
+    width: 33%;
+    background: #9498a0;
+    position: relative;
+    color: #fff;
+}
+
+.arrow-second::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: -36px; bottom: -1px; /* Положение треугольника */
+    border: 21px solid transparent; /* Прозрачные границы */
+    border-left: 15px solid #9498a0; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.arrow-second:hover::after{
+    border-left: 15px solid #d36742; /* Добавляем треугольник */
+}
+
+.arrow-second:hover{
+    background-color: #d36742;
+}
+
+.arrow-second:active::after{
+    border-left: 15px solid #22ac83;
+}
+.arrow-second:active {
+    background-color: #22ac83;
+}
+
+.arrow-third {
+    width: 33%;
+    background: #6f7780;
+    position: relative;
+    color: #fff;
+}
+
+.arrow-third::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: -36px; bottom: -0.5px; /* Положение треугольника */
+    border: 21px solid transparent; /* Прозрачные границы */
+    border-left: 15px solid #6f7780; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.arrow-third:hover::after{
+    border-left: 15px solid #d36742; /* Добавляем треугольник */
+}
+
+.arrow-third:hover{
+    background-color: #d36742;
+}
+
+.arrow-third:active::after{
+    border-left: 15px solid #22ac83;
+}
+.arrow-third:active {
+    background-color: #22ac83;
+}
+/*End arrows button-----------------------------------------------------------------*/
+
+/*Buttons 1-----------------------------------------------------------------------*/
+
+.buttons1 {
+    float: left;
+    width: 30%;
+    margin-left: 40px;
+}
+.clear {
+    clear: both;
+}
+.buttons1 i{
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+
+
+.clock, .download, .like {
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    width: 32%;
+    outline: none;
+}
+
+.clock:hover, .download:hover, .like:hover {
+    background-color: #d36742;
+    cursor: pointer;
+}
+
+.clock:active, .download:active, .like:active {
+    box-shadow: inset 0 0 6px;
+}
+
+.clock {
+    background-color: #6a7079;
+}
+
+.download {
+    background-color: #6a7079;
+}
+
+.like {
+    background-color: #22ac83;
+}
+
+/*End buttons 1-----------------------------------------------------------------------*/
+
+/*Buttons 2------------------------------------------------------------------*/
+
+.buttons2{
+    float: right;
+    width: 36%;
+    text-align: right;
+}
+
+
+
+.square, .list, .bars{
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+    margin: 0 10px;
+}
+
+.bars{
+    margin: 0 0 0 10px;
+}
+
+.square:hover, .list:hover, .bars:hover {
+    background-color: #d36742;
+    cursor: pointer;
+}
+
+.square:active, .list:active, .bars:active{
+    box-shadow: inset 0 0 6px;
+}
+
+.square {
+     background-color: #6a7079;
+ }
+
+.list {
+    background-color: #6a7079;
+}
+
+.bars {
+    background-color: #6a7079;
+}
+
+/*End buttons 2---------------------------------------------------------------*/
+
+/*Drop down menu--------------------------------------------------------------*/
+
+.dropdow {
+    float: left;
+    position: relative;
+    width: 17%;
+    background-color: #6a7079;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdow::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; top: -20px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #6a7079; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.dropdow ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5%;
+    display: block;
+}
+
+.dropdow ul li a i{
+    font-size: 20px;
+    float: right;
+}
+
+.dropdow ul li a:hover{
+    background-color: #d36742;
+}
+
+.dropdow ul li:hover {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdow ul li{
+    list-style: none;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
+
+/*End drop down menu-----------------------------------------------------------*/
+
+/*Block with pic & button----------------------------------------------------*/
+
+.blockPicBut {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 40.5%;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.blockPicBut .pic{
+    float: left;
+    width: 45%;
+    height: 220px;
+}
+
+.blockPicBut .buttonBox {
+    padding: 5%;
+    float: left;
+    width: 55%;
+    height: 220px;
+    background-color: #22ac83;
+    text-align: left;
+}
+
+.blockPicBut .buttonBox span{
+    font-weight: bold;
+    display: block;
+    padding: 0 0 2% 0;
+}
+
+.blockPicBut img{
+    width: 100%;
+    height: 220px;
+}
+
+.buttonBox button {
+    margin: 20px 0 0 0;
+    padding: 5% 15%;
+    color: #ffffff;
+   background: #d36742;
+    outline: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.buttonBox button:hover{
+    background: #6a7079;
+    cursor: pointer;
+}
+
+.buttonBox button:active{
+box-shadow: inset 0 0 6px;
+}
+
+/*End Block with pic & button-----------------------------------------------------*/
+
+/*Block with Large tooltip Heading-------------------------------------------*/
+
+.blockLargeToolip {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 40.5%;
+    height: 220px;
+    float: left;
+    margin: 0 0 0 10px;
+    background: #6f7780;
+    padding: 1.7%;
+    position: relative;
+    color: white;
+}
+
+.blockLargeToolip::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 30px; bottom: -14px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-left: 15px solid #6f7780; /* Добавляем треугольник */
+    z-index: 999;
+}
+
+.blockLargeToolip .head {
+    display: block;
+    padding: 0 0 2% 0;
+    font-weight: bold;
+}
+
+.blockLargeToolip button {
+    float: right;
+    margin: 50px 0 0 0;
+    padding: 3% 6%;
+    color: #ffffff;
+    background: #d36742;
+    outline: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blockLargeToolip button:hover{
+    background: #22ac83;
+    cursor: pointer;
+}
+
+.blockLargeToolip button:active{
+box-shadow: inset 0 0 6px;
+}
+
+.dotted {
+    float: left;
+    padding: 80px 0 0 0;
+}
+
+.dotted span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+
+.dotted span:hover{
+    border: 5px solid #d36742;
+}
+
+/*End Block with Large tooltip Heading-------------------------------------------------------*/
+
+/*BIG buttons---------------------------------------------------------------------------*/
+
+.big1, .big2, .big3 {
+    width: 30%;
+    padding: 1.5% 0;
+    margin: 0 4.5% 0 0;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.big1 {
+    background: #6a7079;
+}
+
+.big2 {
+    background: #22ac83;
+    color: black;
+}
+
+.big3 {
+    margin: 0;
+    background: #6a7079;
+}
+
+.big1:hover, .big2:hover, .big3:hover {
+    background: #d36742;
+    cursor: pointer;
+}
+
+.big1:active, .big2:active, .big3:active {
+    box-shadow: inset 0 0 6px;
+}
+
+/*End BIG buttons---------------------------------------------------------------------------------*/
+
+/*Small buttons*/
+
+.smallcontainer{
+    width: 55%;
+    float: left;
+}
+
+.small1, .small2, .small3 {
+    width: 30%;
+    padding: 1.5% 0;
+    margin: 0 4% 0 0;
+    font-size: 15px;
+    outline: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.small1 {
+    background: #6a7079;
+}
+
+.small2 {
+    background: #22ac83;
+    color: black;
+}
+
+.small3 {
+    margin: 0;
+    background: #6a7079;
+}
+
+.small1:hover, .small2:hover, .small3:hover {
+    background: #d36742;
+    cursor: pointer;
+}
+
+.small1:active, .small2:active, .small3:active {
+    box-shadow: inset 0 0 6px;
+}
+
+/*End Small buttons*/
+
+/*Tooltips*/
+
+.tooltips{
+    float: left;
+    width: 40%;
+    margin: 0 0 0 5%;
+}
+
+.tooltip1, .tooltip2, .tooltip3 {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5% 0;
+    margin: 0 4% 0 0;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tooltip1 {
+    background: #6a7079;
+    position: relative;
+}
+
+.tooltip1::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: 100%; top: 25%; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid #6a7079; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.tooltip1:hover::after{
+    border-right: 10px solid #d36742; /* Добавляем треугольник */
+}
+
+.tooltip1:hover{
+    background-color: #d36742;
+    cursor: pointer;
+}
+.tooltip1:active::after{
+    border-right: 10px solid #22ac83;
+}
+.tooltip1:active{
+    background-color: #22ac83;
+}
+
+.tooltip2 {
+    background: #22ac83;
+    position: relative;
+}
+
+.tooltip2::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 43%; top: 95%; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid #22ac83; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.tooltip2:hover::after{
+    border-top: 10px solid #d36742; /* Добавляем треугольник */
+}
+
+.tooltip2:hover{
+    background-color: #d36742;
+    cursor: pointer;
+}
+.tooltip2:active::after{
+    border-top: 10px solid #22ac83;
+}
+.tooltip2:active{
+    background-color: #22ac83;
+}
+
+.tooltip3 {
+    margin: 0;
+    background: #6a7079;
+    position: relative;
+}
+
+.tooltip3::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: 100%; top: 25%; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid #6a7079; /* Добавляем треугольник */
+    z-index: 1;
+}
+
+.tooltip3:hover::after{
+    border-right: 10px solid #d36742; /* Добавляем треугольник */
+}
+
+.tooltip3:hover{
+    background-color: #d36742;
+    cursor: pointer;
+}
+.tooltip3:active::after{
+    border-right: 10px solid #22ac83;
+}
+.tooltip3:active{
+    background-color: #22ac83;
+}
+
+/*End Tooltips*/
+
+/*arrows*/
+
+.arrowscontainer {
+    width: 15%;
+    float: left;
+}
+
+.arrowscontainer a{
+    text-decoration: none;
+}
+
+.arrowscontainer a i:hover{
+    color: #d36742;
+}
+
+.arrow1, .arrow2, .arrow3 {
+    display: inline-block;
+    font-size: 40px;
+    margin: 0 5% 0 0;
+}
+
+.arrow1 a i, .arrow3 a i{
+    color: #6a7079;
+}
+
+.arrow2 a i{
+    color: #22ac83;
+}
+
+/*End arrows*/
+
+/*Close button*/
+
+.closebuttons {
+    width: 20%;
+    float: left;
+}
+
+.close1, .close2, .close3 {
+    width: 20%;
+    padding: 1.5% 0;
+    margin: 0 4% 0 0;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.close1 {
+    background: #6a7079;
+}
+
+.close2 {
+    background: #22ac83;
+}
+
+.close3 {
+    margin: 0;
+    background: #6a7079;
+}
+
+.close1:hover, .close2:hover, .close3:hover {
+    background: #d36742;
+    cursor: pointer;
+}
+
+.close1:active, .close2:active, .close3:active {
+    box-shadow: inset 0 0 6px;
+}
+/*End Close button*/
+
+/*Select button*/
+
+.selectbuttons {
+    width: 20%;
+    float: left;
+}
+
+.select1, .select2, .select3 {
+    width: 20%;
+    padding: 1.5% 0;
+    margin: 0 4% 0 0;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.select1 {
+    background: #6a7079;
+}
+
+.select2 {
+    background: #22ac83;
+}
+
+.select3 {
+    margin: 0;
+    background: #6a7079;
+}
+
+.select1:hover, .select2:hover, .select3:hover {
+    background: #d36742;
+    cursor: pointer;
+}
+
+.select1:active, .select2:active, .select3:active {
+    box-shadow: inset 0 0 6px;
+}
+/*End Select button*/
+
+/*Switches*/
+
+.switch {
+    width: 40%;
+    max-height: 250px;
+    float: left;
+    color: white;
+}
+
+.on, .off, .rightbut, .leftbut {
+    width: 100%;
+    max-width: 100px;
+    max-height: 45px;
+    padding: 5px;
+    margin-right: 3%;
+    float: left;
+    border-radius: 20px;
+    background: #6a7079;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    position: relative;
+}
+
+.onbut {
+    float: right;
+    width: 20px;
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 60%;
+    background: #22ac83;
+}
+
+.offbut {
+    float: left;
+    width: 20px;
+    padding: 12px;
+    margin: 0 11% 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 60%;
+    background: #d36742;
+}
+
+.onbut1 {
+    position: absolute;
+    top: 16%;
+    left:72px;
+    width: 20px;
+    padding: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 60%;
+    background: #22ac83;
+    opacity: 0.8;
+
+    }
+
+.offbut1 {
+    position: absolute;
+    top: 16%;
+    right: 61px;
+    width: 20px;
+    padding: 12px;
+    margin: 0 11% 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 60%;
+    background: #d36742;
+    opacity: 0.8;
+}
+
+.leftbut .line, .rightbut .line{
+    width: 100%;
+    height: 10px;
+    margin: 8px 0;
+    border-radius: 40px;
+    background: #ffffff;
+    }
+
+/*End Switches*/
